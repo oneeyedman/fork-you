@@ -11,7 +11,6 @@ body {
 	background: -ms-linear-gradient(top, #0bbdf7 0%,#0b7ede 100%);
 	background: linear-gradient(to bottom, #0bbdf7 0%,#0b7ede 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0bbdf7', endColorstr='#0b7ede',GradientType=0 );
-	background: none;
 	margin:0;
 	min-width:320px;
 	min-height: 400px;
