@@ -1,13 +1,18 @@
 'use strict';
 const audio = document.querySelector('#rock');
-const tuerto = document.querySelector('.party');
+const party = document.querySelector('.party');
 
 audio.load();
 
-tuerto.addEventListener('mouseover', () => {
+party.addEventListener('mouseover', () => {
   audio.play();
 });
 
-tuerto.addEventListener('mouseout', () => {
+party.addEventListener('click', () => {
+  
+	party.classList.remove('party--interaction-required');
+});
+
+party.addEventListener('mouseout', () => {
   audio.pause();
 });

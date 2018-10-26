@@ -31,6 +31,20 @@ body {
 	background: linear-gradient(to bottom, #f00 0%,#800 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f00', endColorstr='#800',GradientType=0 );
 }
+.party__warning {
+	position: absolute;
+	left: 1em;
+	top: 1em;
+	background: #fff;
+	padding: .25em .5em;
+	font-family: 'Comic Sans MS', sans-serif;
+	opacity: .75;
+	opacity: 0;
+	transition: opacity ease .5s;
+}
+.party--interaction-required .party__warning {
+	opacity: 1;
+}
 .party__cursor {
 	font-size:8px;
 	padding:5em 0 3.5em;
