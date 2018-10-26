@@ -1,0 +1,789 @@
+body {
+	margin: 0;
+	height: 100vh;
+}
+.party {
+	background: #0bbdf7;
+	background: -moz-linear-gradient(top, #0bbdf7 0%, #0b7ede 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0bbdf7), color-stop(100%,#0b7ede));
+	background: -webkit-linear-gradient(top, #0bbdf7 0%,#0b7ede 100%);
+	background: -o-linear-gradient(top, #0bbdf7 0%,#0b7ede 100%);
+	background: -ms-linear-gradient(top, #0bbdf7 0%,#0b7ede 100%);
+	background: linear-gradient(to bottom, #0bbdf7 0%,#0b7ede 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0bbdf7', endColorstr='#0b7ede',GradientType=0 );
+	background: none;
+	margin:0;
+	min-width:320px;
+	min-height: 400px;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.party:hover {
+	background: #f00;
+	background: -moz-linear-gradient(top, #f00 0%, #800 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f00), color-stop(100%,#800));
+	background: -webkit-linear-gradient(top, #f00 0%,#800 100%);
+	background: -o-linear-gradient(top, #f00 0%,#800 100%);
+	background: -ms-linear-gradient(top, #f00 0%,#800 100%);
+	background: linear-gradient(to bottom, #f00 0%,#800 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f00', endColorstr='#800',GradientType=0 );
+}
+.party__cursor {
+	font-size:8px;
+	padding:5em 0 3.5em;
+	min-height: 200px;	
+}
+
+.fork-you {
+	display:block;
+	height:22em;
+	margin:0px auto;
+	position:relative;
+	width:17em;
+}
+.fork-you:before { 
+	/* SHADOWS */
+	background-color: transparent;
+	box-shadow: 
+		8em 0em 5px #444,
+		9em 0em 5px #444,
+		7em 1em 5px #444,
+		7em 2em 5px #444,
+		7em 3em 5px #444,
+		7em 4em 5px #444,
+		7em 5em 5px #444,
+		7em 6em 5px #444,
+		7em 7em 5px #444,
+		7em 8em 5px #444,
+		10em 1em 5px #444,
+		10em 2em 5px #444,
+		10em 3em 5px #444,
+		10em 4em 5px #444,
+		10em 5em 5px #444,
+		10em 6em 5px #444,
+		10em 7em 5px #444,
+		10em 8em 5px #444,
+		5em 5em 5px #444,
+		6em 5em 5px #444,
+		11em 6em 5px #444,
+		12em 6em 5px #444,
+		13em 7em 5px #444,
+		13em 8em 5px #444,
+		13em 9em 5px #444,
+		13em 7em 5px #444,
+		14em 7em 5px #444,
+		15em 8em 5px #444,
+		16em 9em 5px #444,
+		16em 10em 5px #444,
+		16em 11em 5px #444,
+		16em 12em 5px #444,
+		16em 13em 5px #444,
+		16em 14em 5px #444,
+		16em 15em 5px #444,
+		15em 16em 5px #444,
+		15em 17em 5px #444,
+		15em 18em 5px #444,
+		14em 19em 5px #444,
+		14em 20em 5px #444,
+		14em 21em 5px #444,
+		13em 21em 5px #444,
+		12em 21em 5px #444,
+		11em 21em 5px #444,
+		10em 21em 5px #444,
+		9em 21em 5px #444,
+		8em 21em 5px #444,
+		7em 21em 5px #444,
+		6em 21em 5px #444,
+		5em 21em 5px #444,
+		5em 20em 5px #444,
+		5em 19em 5px #444,
+		4em 18em 5px #444,
+		4em 17em 5px #444,
+		3em 16em 5px #444,
+		3em 15em 5px #444,
+		2em 14em 5px #444,
+		2em 13em 5px #444,
+		1em 12em 5px #444,
+		0em 11em 5px #444,
+		0em 10em 5px #444,
+		0em 9em 5px #444,
+		1em 9em 5px #444,
+		2em 9em 5px #444,
+		3em 10em 5px #444,
+		4em 6em 5px #444,
+		4em 7em 5px #444,
+		4em 8em 5px #444,
+		4em 9em 5px #444,
+		4em 10em 5px #444,
+		4em 11em 5px #444,
+		4em 12em 5px #444;
+	content: '';
+	height: 1em;
+	left: 0px;
+	position: absolute;
+	top: 0px;
+	width: 1em;
+	z-index: 1;
+}
+.fork-you:after { 
+	/* HAND */
+	background-color: transparent;
+	box-shadow: 
+		8em 0em 0 #222,
+		9em 0em 0 #222,
+		7em 1em 0 #222,
+		7em 2em 0 #222,
+		7em 3em 0 #222,
+		7em 4em 0 #222,
+		7em 5em 0 #222,
+		7em 6em 0 #222,
+		7em 7em 0 #222,
+		7em 8em 0 #222,
+		10em 1em 0 #222,
+		10em 2em 0 #222,
+		10em 3em 0 #222,
+		10em 4em 0 #222,
+		10em 5em 0 #222,
+		10em 6em 0 #222,
+		10em 7em 0 #222,
+		10em 8em 0 #222,
+		5em 5em 0 #222,
+		6em 5em 0 #222,
+		11em 6em 0 #222,
+		12em 6em 0 #222,
+		13em 7em 0 #222,
+		13em 8em 0 #222,
+		13em 9em 0 #222,
+		13em 7em 0 #222,
+		14em 7em 0 #222,
+		15em 8em 0 #222,
+		16em 9em 0 #222,
+		16em 10em 0 #222,
+		16em 11em 0 #222,
+		16em 12em 0 #222,
+		16em 13em 0 #222,
+		16em 14em 0 #222,
+		16em 15em 0 #222,
+		15em 16em 0 #222,
+		15em 17em 0 #222,
+		15em 18em 0 #222,
+		14em 19em 0 #222,
+		14em 20em 0 #222,
+		14em 21em 0 #222,
+		13em 21em 0 #222,
+		12em 21em 0 #222,
+		11em 21em 0 #222,
+		10em 21em 0 #222,
+		9em 21em 0 #222,
+		8em 21em 0 #222,
+		7em 21em 0 #222,
+		6em 21em 0 #222,
+		5em 21em 0 #222,
+		5em 20em 0 #222,
+		5em 19em 0 #222,
+		4em 18em 0 #222,
+		4em 17em 0 #222,
+		3em 16em 0 #222,
+		3em 15em 0 #222,
+		2em 14em 0 #222,
+		2em 13em 0 #222,
+		1em 12em 0 #222,
+		0em 11em 0 #222,
+		0em 10em 0 #222,
+		0em 9em 0 #222,
+		1em 9em 0 #222,
+		2em 9em 0 #222,
+		3em 10em 0 #222,
+		4em 6em 0 #222,
+		4em 7em 0 #222,
+		4em 8em 0 #222,
+		4em 9em 0 #222,
+		4em 10em 0 #222,
+		4em 11em 0 #222,
+		4em 12em 0 #222,
+		1em 10em 0 #fff,
+		2em 10em 0 #fff,
+		1em 11em 0 #fff,
+		2em 11em 0 #fff,
+		3em 11em 0 #fff,
+		2em 12em 0 #fff,
+		3em 12em 0 #fff,
+		3em 13em 0 #fff,
+		3em 14em 0 #fff,
+		4em 13em 0 #fff,
+		4em 14em 0 #fff,
+		4em 15em 0 #fff,
+		4em 16em 0 #fff,
+		5em 6em 0 #fff,
+		5em 7em 0 #fff,
+		5em 8em 0 #fff,
+		5em 9em 0 #fff,
+		5em 10em 0 #fff,
+		5em 11em 0 #fff,
+		5em 12em 0 #fff,
+		5em 13em 0 #fff,
+		5em 14em 0 #fff,
+		5em 15em 0 #fff,
+		5em 16em 0 #fff,
+		5em 17em 0 #fff,
+		5em 18em 0 #fff,
+		6em 6em 0 #fff,
+		6em 7em 0 #fff,
+		6em 8em 0 #fff,
+		6em 9em 0 #fff,
+		6em 10em 0 #fff,
+		6em 11em 0 #fff,
+		6em 12em 0 #fff,
+		6em 13em 0 #fff,
+		6em 14em 0 #fff,
+		6em 15em 0 #fff,
+		6em 16em 0 #fff,
+		6em 17em 0 #fff,
+		6em 18em 0 #fff,
+		6em 19em 0 #fff,
+		6em 20em 0 #fff,
+		7em 9em 0 #fff,
+		7em 10em 0 #fff,
+		7em 11em 0 #fff,
+		7em 12em 0 #fff,
+		7em 13em 0 #fff,
+		7em 14em 0 #fff,
+		7em 15em 0 #fff,
+		7em 16em 0 #fff,
+		7em 17em 0 #fff,
+		7em 18em 0 #fff,
+		7em 19em 0 #fff,
+		7em 20em 0 #fff,
+		8em 1em 0 #fff,
+		8em 2em 0 #fff,
+		8em 3em 0 #fff,
+		8em 4em 0 #fff,
+		8em 5em 0 #fff,
+		8em 6em 0 #fff,
+		8em 7em 0 #fff,
+		8em 8em 0 #fff,
+		8em 9em 0 #fff,
+		8em 10em 0 #fff,
+		8em 11em 0 #fff,
+		8em 12em 0 #fff,
+		8em 13em 0 #fff,
+		8em 14em 0 #fff,
+		8em 15em 0 #fff,
+		8em 16em 0 #fff,
+		8em 17em 0 #fff,
+		8em 18em 0 #fff,
+		8em 19em 0 #fff,
+		8em 20em 0 #fff,
+		9em 1em 0 #fff,
+		9em 2em 0 #fff,
+		9em 3em 0 #fff,
+		9em 4em 0 #fff,
+		9em 5em 0 #fff,
+		9em 6em 0 #fff,
+		9em 7em 0 #fff,
+		9em 8em 0 #fff,
+		9em 9em 0 #fff,
+		9em 10em 0 #fff,
+		9em 11em 0 #fff,
+		9em 12em 0 #fff,
+		9em 13em 0 #fff,
+		9em 14em 0 #fff,
+		9em 15em 0 #fff,
+		9em 16em 0 #fff,
+		9em 17em 0 #fff,
+		9em 18em 0 #fff,
+		9em 19em 0 #fff,
+		9em 20em 0 #fff,
+		10em 9em 0 #fff,
+		10em 10em 0 #fff,
+		10em 11em 0 #fff,
+		10em 12em 0 #fff,
+		10em 13em 0 #fff,
+		10em 14em 0 #fff,
+		10em 15em 0 #fff,
+		10em 16em 0 #fff,
+		10em 17em 0 #fff,
+		10em 18em 0 #fff,
+		10em 19em 0 #fff,
+		10em 20em 0 #fff,
+		11em 7em 0 #fff,
+		11em 8em 0 #fff,
+		11em 9em 0 #fff,
+		11em 10em 0 #fff,
+		11em 11em 0 #fff,
+		11em 12em 0 #fff,
+		11em 13em 0 #fff,
+		11em 14em 0 #fff,
+		11em 15em 0 #fff,
+		11em 16em 0 #fff,
+		11em 17em 0 #fff,
+		11em 18em 0 #fff,
+		11em 19em 0 #fff,
+		11em 20em 0 #fff,
+		12em 7em 0 #fff,
+		12em 8em 0 #fff,
+		12em 9em 0 #fff,
+		12em 10em 0 #fff,
+		12em 11em 0 #fff,
+		12em 12em 0 #fff,
+		12em 13em 0 #fff,
+		12em 14em 0 #fff,
+		12em 15em 0 #fff,
+		12em 16em 0 #fff,
+		12em 17em 0 #fff,
+		12em 18em 0 #fff,
+		12em 19em 0 #fff,
+		12em 20em 0 #fff,
+		13em 10em 0 #fff,
+		13em 11em 0 #fff,
+		13em 12em 0 #fff,
+		13em 13em 0 #fff,
+		13em 14em 0 #fff,
+		13em 15em 0 #fff,
+		13em 16em 0 #fff,
+		13em 17em 0 #fff,
+		13em 18em 0 #fff,
+		13em 19em 0 #fff,
+		13em 20em 0 #fff,
+		14em 8em 0 #fff,
+		14em 9em 0 #fff,
+		14em 10em 0 #fff,
+		14em 11em 0 #fff,
+		14em 12em 0 #fff,
+		14em 13em 0 #fff,
+		14em 14em 0 #fff,
+		14em 15em 0 #fff,
+		14em 16em 0 #fff,
+		14em 17em 0 #fff,
+		14em 18em 0 #fff,
+		15em 9em 0 #fff,
+		15em 10em 0 #fff,
+		15em 11em 0 #fff,
+		15em 12em 0 #fff,
+		15em 13em 0 #fff,
+		15em 14em 0 #fff,
+		15em 15em 0 #fff;
+	content: '';
+	height: 1em;
+	left: 0px;
+	position: absolute;
+	top: 0px;
+	width: 1em;
+	z-index: 2;
+}
+.party:hover .party__cursor .fork-you:before { 
+	/* PARTY SHADOWS */
+	background-color: transparent;
+	box-shadow: 
+		5em 1em 5px #444,
+		6em 1em 5px #444,
+		7em 2em 5px #444,
+		7em 3em 5px #444,
+		7em 4em 5px #444,
+		7em 5em 5px #444,
+		7em 6em 5px #444,
+		7em 7em 5px #444,
+		7em 8em 5px #444,
+		4em 2em 5px #444,
+		4em 3em 5px #444,
+		4em 4em 5px #444,
+		4em 5em 5px #444,
+		10em 6em 5px #444,
+		10em 7em 5px #444,
+		10em 8em 5px #444,
+		8em 5em 5px #444,
+		9em 5em 5px #444,
+		11em 6em 5px #444,
+		12em 6em 5px #444,
+		13em 7em 5px #444,
+		13em 8em 5px #444,
+		13em 9em 5px #444,
+		13em 6em 5px #444,
+		13em 5em 5px #444,
+		13em 4em 5px #444,
+		14em 3em 5px #444,
+		15em 3em 5px #444,
+		16em 4em 5px #444,
+		16em 5em 5px #444,
+		16em 6em 5px #444,
+		16em 7em 5px #444,
+		16em 8em 5px #444,
+		16em 9em 5px #444,
+		16em 9em 5px #444,
+		16em 10em 5px #444,
+		16em 11em 5px #444,
+		16em 12em 5px #444,
+		16em 13em 5px #444,
+		16em 14em 5px #444,
+		16em 15em 5px #444,
+		15em 16em 5px #444,
+		15em 17em 5px #444,
+		15em 18em 5px #444,
+		14em 19em 5px #444,
+		14em 20em 5px #444,
+		14em 21em 5px #444,
+		13em 21em 5px #444,
+		12em 21em 5px #444,
+		11em 21em 5px #444,
+		10em 21em 5px #444,
+		9em 21em 5px #444,
+		8em 21em 5px #444,
+		7em 21em 5px #444,
+		6em 21em 5px #444,
+		5em 21em 5px #444,
+		5em 20em 5px #444,
+		5em 19em 5px #444,
+		4em 18em 5px #444,
+		4em 17em 5px #444,
+		3em 16em 5px #444,
+		3em 15em 5px #444,
+		2em 14em 5px #444,
+		2em 13em 5px #444,
+		1em 12em 5px #444,
+		0em 11em 5px #444,
+		0em 10em 5px #444,
+		0em 9em 5px #444,
+		1em 9em 5px #444,
+		2em 9em 5px #444,
+		3em 10em 5px #444,
+		4em 6em 5px #444,
+		4em 7em 5px #444,
+		4em 8em 5px #444,
+		4em 9em 5px #444,
+		4em 10em 5px #444,
+		4em 11em 5px #444,
+		4em 12em 5px #444;
+	content: '';
+	height: 1em;
+	left: 0px;
+	position: absolute;
+	top: 0px;
+	width: 1em;
+	z-index: 1;
+}
+.party:hover .party__cursor .fork-you:after { 
+	/* PARTY HAND */
+	background-color: transparent;
+	box-shadow: 
+		5em 1em 0 #222,
+		6em 1em 0 #222,
+		7em 2em 0 #222,
+		7em 3em 0 #222,
+		7em 4em 0 #222,
+		7em 5em 0 #222,
+		7em 6em 0 #222,
+		7em 7em 0 #222,
+		7em 8em 0 #222,
+		4em 2em 0 #222,
+		4em 3em 0 #222,
+		4em 4em 0 #222,
+		4em 5em 0 #222,
+		10em 6em 0 #222,
+		10em 7em 0 #222,
+		10em 8em 0 #222,
+		8em 5em 0 #222,
+		9em 5em 0 #222,
+		11em 6em 0 #222,
+		12em 6em 0 #222,
+		13em 7em 0 #222,
+		13em 8em 0 #222,
+		13em 9em 0 #222,
+		13em 6em 0 #222,
+		13em 5em 0 #222,
+		13em 4em 0 #222,
+		14em 3em 0 #222,
+		15em 3em 0 #222,
+		16em 4em 0 #222,
+		16em 5em 0 #222,
+		16em 6em 0 #222,
+		16em 7em 0 #222,
+		16em 8em 0 #222,
+		16em 9em 0 #222,
+		16em 9em 0 #222,
+		16em 10em 0 #222,
+		16em 11em 0 #222,
+		16em 12em 0 #222,
+		16em 13em 0 #222,
+		16em 14em 0 #222,
+		16em 15em 0 #222,
+		15em 16em 0 #222,
+		15em 17em 0 #222,
+		15em 18em 0 #222,
+		14em 19em 0 #222,
+		14em 20em 0 #222,
+		14em 21em 0 #222,
+		13em 21em 0 #222,
+		12em 21em 0 #222,
+		11em 21em 0 #222,
+		10em 21em 0 #222,
+		9em 21em 0 #222,
+		8em 21em 0 #222,
+		7em 21em 0 #222,
+		6em 21em 0 #222,
+		5em 21em 0 #222,
+		5em 20em 0 #222,
+		5em 19em 0 #222,
+		4em 18em 0 #222,
+		4em 17em 0 #222,
+		3em 16em 0 #222,
+		3em 15em 0 #222,
+		2em 14em 0 #222,
+		2em 13em 0 #222,
+		1em 12em 0 #222,
+		0em 11em 0 #222,
+		0em 10em 0 #222,
+		0em 9em 0 #222,
+		1em 9em 0 #222,
+		2em 9em 0 #222,
+		3em 10em 0 #222,
+		4em 6em 0 #222,
+		4em 7em 0 #222,
+		4em 8em 0 #222,
+		4em 9em 0 #222,
+		4em 10em 0 #222,
+		4em 11em 0 #222,
+		4em 12em 0 #222,
+		1em 10em 0 #feaa66,
+		2em 10em 0 #feaa66,
+		1em 11em 0 #feaa66,
+		2em 11em 0 #feaa66,
+		3em 11em 0 #feaa66,
+		2em 12em 0 #feaa66,
+		3em 12em 0 #444,
+		3em 13em 0 #444,
+		3em 14em 0 #444,
+		4em 13em 0 #666,
+		4em 14em 0 #666,
+		4em 15em 0 #444,
+		4em 16em 0 #444,
+		5em 2em 0 #fece93,
+		5em 3em 0 #fece93,
+		5em 4em 0 #fece93,
+		5em 5em 0 #fece93,
+		5em 6em 0 #fece93,
+		5em 7em 0 #fece93,
+		5em 8em 0 #666,
+		5em 9em 0 #666,
+		5em 10em 0 #666,
+		5em 11em 0 #666,
+		5em 12em 0 #666,
+		5em 13em 0 #666,
+		5em 14em 0 #666,
+		5em 15em 0 #666,
+		5em 16em 0 #666,
+		5em 17em 0 #666,
+		5em 18em 0 #666,
+		6em 2em 0 #fece93,
+		6em 3em 0 #fece93,
+		6em 4em 0 #fece93,
+		6em 5em 0 #fece93,
+		6em 6em 0 #fece93,
+		6em 7em 0 #fece93,
+		6em 8em 0 #666,
+		6em 9em 0 #666,
+		6em 10em 0 #666,
+		6em 11em 0 #fece93,
+		6em 12em 0 #444,
+		6em 13em 0 #666,
+		6em 14em 0 #666,
+		6em 15em 0 #666,
+		6em 16em 0 #666,
+		6em 17em 0 #666,
+		6em 18em 0 #666,
+		6em 19em 0 #666,
+		6em 20em 0 #fece93,
+		7em 9em 0 #666,
+		7em 10em 0 #666,
+		7em 11em 0 #666,
+		7em 12em 0 #666,
+		7em 13em 0 #666,
+		7em 14em 0 #666,
+		7em 15em 0 #fece93,
+		7em 16em 0 #fece93,
+		7em 17em 0 #fece93,
+		7em 18em 0 #666,
+		7em 19em 0 #666,
+		7em 20em 0 #fece93,
+		8em 6em 0 #fece93,
+		8em 7em 0 #fece93,
+		8em 8em 0 #666,
+		8em 9em 0 #666,
+		8em 10em 0 #666,
+		8em 11em 0 #666,
+		8em 12em 0 #666,
+		8em 13em 0 #666,
+		8em 14em 0 #fece93,
+		8em 15em 0 #fece93,
+		8em 16em 0 #fece93,
+		8em 17em 0 #666,
+		8em 18em 0 #666,
+		8em 19em 0 #fece93,
+		8em 20em 0 #fece93,
+		9em 6em 0 #fece93,
+		9em 7em 0 #fece93,
+		9em 8em 0 #666,
+		9em 9em 0 #666,
+		9em 10em 0 #666,
+		9em 11em 0 #fece93,
+		9em 12em 0 #444,
+		9em 13em 0 #666,
+		9em 14em 0 #fece93,
+		9em 15em 0 #fece93,
+		9em 16em 0 #fece93,
+		9em 17em 0 #666,
+		9em 18em 0 #666,
+		9em 19em 0 #fece93,
+		9em 20em 0 #fece93,
+		10em 9em 0 #666,
+		10em 10em 0 #666,
+		10em 11em 0 #666,
+		10em 12em 0 #666,
+		10em 13em 0 #666,
+		10em 14em 0 #fece93,
+		10em 15em 0 #fece93,
+		10em 16em 0 #fece93,
+		10em 17em 0 #666,
+		10em 18em 0 #666,
+		10em 19em 0 #fece93,
+		10em 20em 0 #feaa66,
+		11em 7em 0 #fece93,
+		11em 8em 0 #666,
+		11em 9em 0 #666,
+		11em 10em 0 #666,
+		11em 11em 0 #666,
+		11em 12em 0 #666,
+		11em 13em 0 #666,
+		11em 14em 0 #fece93,
+		11em 15em 0 #fece93,
+		11em 16em 0 #fece93,
+		11em 17em 0 #666,
+		11em 18em 0 #444,
+		11em 19em 0 #feaa66,
+		11em 20em 0 #feaa66,
+		12em 7em 0 #fece93,
+		12em 8em 0 #666,
+		12em 9em 0 #666,
+		12em 10em 0 #666,
+		12em 11em 0 #fece93,
+		12em 12em 0 #444,
+		12em 13em 0 #666,
+		12em 14em 0 #666,
+		12em 15em 0 #fece93,
+		12em 16em 0 #fece93,
+		12em 17em 0 #feaa66,
+		12em 18em 0 #444,
+		12em 19em 0 #444,
+		12em 20em 0 #feaa66,
+		13em 10em 0 #666,
+		13em 11em 0 #666,
+		13em 12em 0 #666,
+		13em 13em 0 #666,
+		13em 14em 0 #666,
+		13em 15em 0 #666,
+		13em 16em 0 #444,
+		13em 17em 0 #444,
+		13em 18em 0 #444,
+		13em 19em 0 #444,
+		13em 20em 0 #feaa66,
+		14em 4em 0 #fece93,
+		14em 5em 0 #fece93,
+		14em 6em 0 #fece93,
+		14em 7em 0 #fece93,
+		14em 8em 0 #fece93,
+		14em 9em 0 #666,
+		14em 10em 0 #666,
+		14em 11em 0 #666,
+		14em 12em 0 #666,
+		14em 13em 0 #666,
+		14em 14em 0 #444,
+		14em 15em 0 #444,
+		14em 16em 0 #444,
+		14em 17em 0 #444,
+		14em 18em 0 #444,
+		15em 4em 0 #fece93,
+		15em 5em 0 #fece93,
+		15em 6em 0 #fece93,
+		15em 7em 0 #fece93,
+		15em 8em 0 #fece93,
+		15em 9em 0 #666,
+		15em 10em 0 #666,
+		15em 11em 0 #feaa66,
+		15em 12em 0 #444,
+		15em 13em 0 #444,
+		15em 14em 0 #444,
+		15em 15em 0 #444;
+	content: '';
+	height: 1em;
+	left: 0px;
+	position: absolute;
+	top: 0px;
+	width: 1em;
+	z-index: 2;
+}	 
+
+
+
+
+.credits{
+	background: #0b7ede;
+	color: #fff;
+	font: 12px 'Comic Sans MS', sans-serif;
+	position:absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, -25%);
+	text-align:center;
+	line-height:160%;
+	padding: .5em 1em;
+	border-radius: 8px;
+}
+.party:hover .credits{
+	background:#800;
+	}
+.credits p{
+	
+	margin:0;
+}
+.credits a {
+	color:#fff;
+}
+.credits .fork-you{
+	position: absolute;
+	font-size: 1px;
+	right: 0;
+	top: 50%;
+	transform: translate(30px, -50%);
+}
+
+/* DANCE */
+@keyframes hDance{
+	from {zoom: 1;}
+	to {zoom: 1.25;left:-2em;}
+}
+
+@-moz-keyframes hDance{
+	from {zoom: 1;}
+	to {zoom: 1.25;left:-2em;}
+}
+
+@-webkit-keyframes hDance{
+	from {zoom: 1;}
+	to {zoom: 1.25;left:-2em;}
+}
+
+@-o-keyframes hDance{
+	from {zoom: 1;}
+	to {zoom: 1.25;left:-2em;}
+}
+
+.party:hover .party__cursor .fork-you {
+	transition: zoom ease .2s;
+	animation: hDance .55s linear infinite;
+	-moz-animation: hDance .55s linear infinite;
+	-webkit-animation: hDance .55s linear infinite;
+	-o-animation: hDance .55s linear infinite;
+}
